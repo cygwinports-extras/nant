@@ -1,0 +1,113 @@
+nant
+------------------------------------------
+NAnt is a free .NET build tool. In theory it is kind of like make 
+without make's wrinkles. In practice it's a lot like Ant.
+
+Runtime requirements:
+  cygwin-1.5.23-2
+  mono-1.2.2.1-1
+
+Build requirements:
+  cygwin-1.5.23-2
+  binutils-20060817-1
+  cygport-0.2.7-1
+  make-3.81-1
+  mono-1.2.2.1-1
+
+Canonical website:
+  http://nant.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/nant/
+
+-------------------------------------------
+
+Build instructions:
+  unpack nant-0.85-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./nant-0.85-X.cygport all
+
+This will create:
+  /usr/src/nant-0.85-X-src.tar.bz2
+  /usr/src/nant-0.85-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/nant
+  /usr/share/NAnt/bin/NAnt.CompressionTasks.dll
+  /usr/share/NAnt/bin/NAnt.CompressionTasks.dll.mdb
+  /usr/share/NAnt/bin/NAnt.Core.dll
+  /usr/share/NAnt/bin/NAnt.Core.dll.mdb
+  /usr/share/NAnt/bin/NAnt.DotNetTasks.dll
+  /usr/share/NAnt/bin/NAnt.DotNetTasks.dll.mdb
+  /usr/share/NAnt/bin/NAnt.NUnit.dll
+  /usr/share/NAnt/bin/NAnt.NUnit.dll.mdb
+  /usr/share/NAnt/bin/NAnt.NUnit1Tasks.dll
+  /usr/share/NAnt/bin/NAnt.NUnit1Tasks.dll.mdb
+  /usr/share/NAnt/bin/NAnt.NUnit2Tasks.dll
+  /usr/share/NAnt/bin/NAnt.NUnit2Tasks.dll.mdb
+  /usr/share/NAnt/bin/NAnt.SourceControlTasks.dll
+  /usr/share/NAnt/bin/NAnt.SourceControlTasks.dll.mdb
+  /usr/share/NAnt/bin/NAnt.VSNetTasks.dll
+  /usr/share/NAnt/bin/NAnt.VSNetTasks.dll.mdb
+  /usr/share/NAnt/bin/NAnt.VisualCppTasks.dll
+  /usr/share/NAnt/bin/NAnt.VisualCppTasks.dll.mdb
+  /usr/share/NAnt/bin/NAnt.Win32Tasks.dll
+  /usr/share/NAnt/bin/NAnt.Win32Tasks.dll.mdb
+  /usr/share/NAnt/bin/NAnt.exe
+  /usr/share/NAnt/bin/NAnt.exe.config
+  /usr/share/NAnt/bin/NAnt.exe.mdb
+  /usr/share/NAnt/bin/lib/ICSharpCode.SharpCvsLib.Console.dll
+  /usr/share/NAnt/bin/lib/ICSharpCode.SharpCvsLib.dll
+  /usr/share/NAnt/bin/lib/ICSharpCode.SharpZipLib.dll
+  /usr/share/NAnt/bin/lib/NUnitCore.dll
+  /usr/share/NAnt/bin/lib/mono/1.0/NDoc.Core.dll
+  /usr/share/NAnt/bin/lib/mono/1.0/NDoc.Documenter.Msdn.dll
+  /usr/share/NAnt/bin/lib/mono/1.0/NDoc.ExtendedUI.dll
+  /usr/share/NAnt/bin/lib/mono/1.0/nunit.core.dll
+  /usr/share/NAnt/bin/lib/mono/1.0/nunit.framework.dll
+  /usr/share/NAnt/bin/lib/mono/1.0/nunit.util.dll
+  /usr/share/NAnt/bin/lib/mono/2.0/NDoc.Core.dll
+  /usr/share/NAnt/bin/lib/mono/2.0/NDoc.Documenter.Msdn.dll
+  /usr/share/NAnt/bin/lib/mono/2.0/NDoc.ExtendedUI.dll
+  /usr/share/NAnt/bin/lib/mono/2.0/nunit.core.dll
+  /usr/share/NAnt/bin/lib/mono/2.0/nunit.framework.dll
+  /usr/share/NAnt/bin/lib/mono/2.0/nunit.util.dll
+  /usr/share/NAnt/bin/lib/net/1.0/NDoc.Core.dll
+  /usr/share/NAnt/bin/lib/net/1.0/NDoc.Documenter.Msdn.dll
+  /usr/share/NAnt/bin/lib/net/1.0/NDoc.ExtendedUI.dll
+  /usr/share/NAnt/bin/lib/net/1.0/nunit.core.dll
+  /usr/share/NAnt/bin/lib/net/1.0/nunit.framework.dll
+  /usr/share/NAnt/bin/lib/net/1.0/nunit.util.dll
+  /usr/share/NAnt/bin/lib/net/1.1/NDoc.Core.dll
+  /usr/share/NAnt/bin/lib/net/1.1/NDoc.Documenter.Msdn.dll
+  /usr/share/NAnt/bin/lib/net/1.1/NDoc.ExtendedUI.dll
+  /usr/share/NAnt/bin/lib/net/1.1/nunit.core.dll
+  /usr/share/NAnt/bin/lib/net/1.1/nunit.framework.dll
+  /usr/share/NAnt/bin/lib/net/1.1/nunit.util.dll
+  /usr/share/NAnt/bin/lib/net/2.0/NDoc.Core.dll
+  /usr/share/NAnt/bin/lib/net/2.0/NDoc.Documenter.Msdn.dll
+  /usr/share/NAnt/bin/lib/net/2.0/NDoc.ExtendedUI.dll
+  /usr/share/NAnt/bin/lib/net/2.0/nunit.core.dll
+  /usr/share/NAnt/bin/lib/net/2.0/nunit.framework.dll
+  /usr/share/NAnt/bin/lib/net/2.0/nunit.util.dll
+  /usr/share/NAnt/bin/log4net.dll
+  /usr/share/NAnt/bin/scvs.exe
+  /usr/share/doc/Cygwin/nant-0.85.README
+  /usr/share/doc/nant-0.85/COPYING.txt
+  /usr/share/doc/nant-0.85/README.txt
+
+------------------
+
+Port Notes:
+
+----- version 0.85-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
