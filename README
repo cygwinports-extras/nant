@@ -4,15 +4,14 @@ NAnt is a free .NET build tool. In theory it is kind of like make
 without make's wrinkles. In practice it's a lot like Ant.
 
 Runtime requirements:
-  cygwin-1.5.23-2
-  mono-1.2.2.1-1
+  mono-1.9.1-1
 
 Build requirements:
-  cygwin-1.5.23-2
+  cygwin-1.5.25-11
   binutils-20060817-1
-  cygport-0.2.7-1
+  cygport-0.3.9-1
   make-3.81-1
-  mono-1.2.2.1-1
+  mono-1.9.1-1
 
 Canonical website:
   http://nant.sourceforge.net/
@@ -39,28 +38,28 @@ Files included in the binary package:
 
   /usr/bin/nant
   /usr/share/NAnt/bin/NAnt.CompressionTasks.dll
-  /usr/share/NAnt/bin/NAnt.CompressionTasks.dll.mdb
+  /usr/share/NAnt/bin/NAnt.CompressionTasks.xml
   /usr/share/NAnt/bin/NAnt.Core.dll
-  /usr/share/NAnt/bin/NAnt.Core.dll.mdb
+  /usr/share/NAnt/bin/NAnt.Core.xml
   /usr/share/NAnt/bin/NAnt.DotNetTasks.dll
-  /usr/share/NAnt/bin/NAnt.DotNetTasks.dll.mdb
+  /usr/share/NAnt/bin/NAnt.DotNetTasks.xml
   /usr/share/NAnt/bin/NAnt.NUnit.dll
-  /usr/share/NAnt/bin/NAnt.NUnit.dll.mdb
+  /usr/share/NAnt/bin/NAnt.NUnit.xml
   /usr/share/NAnt/bin/NAnt.NUnit1Tasks.dll
-  /usr/share/NAnt/bin/NAnt.NUnit1Tasks.dll.mdb
+  /usr/share/NAnt/bin/NAnt.NUnit1Tasks.xml
   /usr/share/NAnt/bin/NAnt.NUnit2Tasks.dll
-  /usr/share/NAnt/bin/NAnt.NUnit2Tasks.dll.mdb
+  /usr/share/NAnt/bin/NAnt.NUnit2Tasks.xml
   /usr/share/NAnt/bin/NAnt.SourceControlTasks.dll
-  /usr/share/NAnt/bin/NAnt.SourceControlTasks.dll.mdb
+  /usr/share/NAnt/bin/NAnt.SourceControlTasks.xml
   /usr/share/NAnt/bin/NAnt.VSNetTasks.dll
-  /usr/share/NAnt/bin/NAnt.VSNetTasks.dll.mdb
+  /usr/share/NAnt/bin/NAnt.VSNetTasks.xml
   /usr/share/NAnt/bin/NAnt.VisualCppTasks.dll
-  /usr/share/NAnt/bin/NAnt.VisualCppTasks.dll.mdb
+  /usr/share/NAnt/bin/NAnt.VisualCppTasks.xml
   /usr/share/NAnt/bin/NAnt.Win32Tasks.dll
-  /usr/share/NAnt/bin/NAnt.Win32Tasks.dll.mdb
+  /usr/share/NAnt/bin/NAnt.Win32Tasks.xml
   /usr/share/NAnt/bin/NAnt.exe
   /usr/share/NAnt/bin/NAnt.exe.config
-  /usr/share/NAnt/bin/NAnt.exe.mdb
+  /usr/share/NAnt/bin/NAnt.xml
   /usr/share/NAnt/bin/lib/ICSharpCode.SharpCvsLib.Console.dll
   /usr/share/NAnt/bin/lib/ICSharpCode.SharpCvsLib.dll
   /usr/share/NAnt/bin/lib/ICSharpCode.SharpZipLib.dll
@@ -104,6 +103,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.85-2 -----
+Rebuilt for mono-1.9 with Gentoo patches.
 
 ----- version 0.85-1 -----
 Initial release for Cygwin.

@@ -1,0 +1,24 @@
+inherit mono
+
+DESCRIPTION="NAnt build tool"
+SRC_URI="http://go-mono.com/sources/${PN}/${P}-src.tar.gz"
+PATCH_URI="
+	mirror://portage/dev-dotnet/nant/files/${P}-threadingfix.patch
+	mirror://portage/dev-dotnet/nant/files/${P}-obselencense.patch
+"
+
+MAKEOPTS+=" -j1 DIRSEP=/ PLATFORM_REFERENCES="
+#DIFF_EXCLUDES="*.build"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake prefix=/usr
+}
+
+src_install() {
+	cd ${B}
+	cyginstall prefix=${D}/usr
+
+	sed -i -e "s!${D}!!g" ${D}/usr/bin/nant
+}
