@@ -1,5 +1,5 @@
 category: Dotnet Devel
-requires: cygwin mono
+requires: mono
 sdesc: ".NET build tool"
 ldesc: "NAnt is a free .NET build tool. In theory it is kind of like make
 without make's wrinkles. In practice it's a lot like Ant."
