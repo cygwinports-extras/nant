@@ -1,4 +1,4 @@
-category: Dotnet Devel
+category: DotNET Devel
 requires: mono
 sdesc: ".NET build tool"
 ldesc: "NAnt is a free .NET build tool. In theory it is kind of like make

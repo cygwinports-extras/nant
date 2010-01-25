@@ -1,14 +1,11 @@
 inherit mono
 
 DESCRIPTION="NAnt build tool"
-SRC_URI="http://go-mono.com/sources/${PN}/${P}-src.tar.gz"
-PATCH_URI="
-	mirror://portage/dev-dotnet/nant/files/${P}-threadingfix.patch
-	mirror://portage/dev-dotnet/nant/files/${P}-obselencense.patch
-"
+HOMEPAGE="http://nant.sourceforge.net/"
+SRC_URI="http://go-mono.com/sources/${PN}/${P/_/-}-src.tar.gz"
+SRC_DIR=${P/_/-}
 
 MAKEOPTS+=" -j1 DIRSEP=/ PLATFORM_REFERENCES="
-#DIFF_EXCLUDES="*.build"
 
 src_compile() {
 	lndirs
