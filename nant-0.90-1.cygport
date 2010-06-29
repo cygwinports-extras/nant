@@ -1,0 +1,14 @@
+inherit mono
+
+DESCRIPTION="NAnt build tool"
+HOMEPAGE="http://nant.sourceforge.net/"
+SRC_URI="mirror://sourceforge/nant/${P/_/-}-src.tar.gz"
+SRC_DIR=${P/_/-}
+
+MAKEOPTS+=" -j1 prefix=/usr DIRSEP=/ PLATFORM_REFERENCES="
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake
+}
